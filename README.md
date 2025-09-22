@@ -17,8 +17,8 @@ Este repositório contém uma página estática (HTML/CSS/JS) que permite cadast
 
 ![Tela 1](assets/tela1.png)
 
-![Tela 2](assets/tela2.png)
+![Tela 2](assets/tela3.png)
 
-![Tela 3](assets/tela3.png)
+![Tela 3](assets/tela2.png)
 
 
