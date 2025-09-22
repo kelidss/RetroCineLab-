@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 CineManager Pro - Vintage Cinema Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https:
+    <link rel="preconnect" href="https:
+    <link href="https:
+</head>
+<body>
+    <div class="cinema-spotlights">
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+        <div class="spotlight spotlight-3"></div>
+    </div>
+    <div class="film-strip">
+        <div class="film-hole"></div>
+        <div class="film-hole"></div>
+        <div class="film-hole"></div>
+        <div class="film-hole"></div>
+        <div class="film-hole"></div>
+        <div class="film-hole"></div>
+        <div class="film-hole"></div>
+        <div class="film-hole"></div>
+    </div>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header class="app-header">
+            <div class="vintage-marquee">
+                <div class="marquee-lights">
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                    <div class="bulb"></div>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="cinema-reel cinema-reel-left">
+                    <div class="reel-holes">
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                    </div>
+                </div>
+                <div class="cinema-reel cinema-reel-right">
+                    <div class="reel-holes">
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                    </div>
+                </div>
+                <h1>🎬 CineManager Pro</h1>
+                <p class="vintage-subtitle">✨ Sua experiência cinematográfica premium ✨</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-icon">🎭</div>
+                        <span class="stat-number" id="totalMovies">0</span>
+                        <span class="stat-label">Produções</span>
+                        <div class="stat-sparkle"></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🎨</div>
+                        <span class="stat-number" id="totalGenres">0</span>
+                        <span class="stat-label">Categorias</span>
+                        <div class="stat-sparkle"></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🏆</div>
+                        <span class="stat-number" id="averageYear">-</span>
+                        <span class="stat-label">Era Dourada</span>
+                        <div class="stat-sparkle"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="form-section">
+                <div class="form-card">
+                    <div class="director-clapperboard">
+                        <div class="clapper-top">
+                            <div class="clapper-stripes">
+                                <div class="stripe black"></div>
+                                <div class="stripe white"></div>
+                                <div class="stripe black"></div>
+                                <div class="stripe white"></div>
+                                <div class="stripe black"></div>
+                            </div>
+                        </div>
+                        <div class="clapper-info">
+                            <span class="production">NOVA PRODUÇÃO</span>
+                            <span class="scene">CADASTRO</span>
+                        </div>
+                    </div>
+                    <h2>🎬 Nova Obra Cinematográfica</h2>
+                    <form id="movieForm" class="movie-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="movieName">🎭 Nome do Filme</label>
+                                <input
+                                    type="text"
+                                    id="movieName"
+                                    name="movieName"
+                                    placeholder="Digite o nome do filme..."
+                                    required
+                                >
+                                <div class="input-feedback" id="nameFeedback"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="movieYear">📅 Ano de Lançamento</label>
+                                <input
+                                    type="number"
+                                    id="movieYear"
+                                    name="movieYear"
+                                    min="1888"
+                                    max="2030"
+                                    placeholder="Ex: 2023"
+                                    required
+                                >
+                                <div class="input-feedback" id="yearFeedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="movieGenre">🎨 Gênero</label>
+                                <select id="movieGenre" name="movieGenre" required>
+                                    <option value="">Selecione o gênero...</option>
+                                    <option value="Ação">🔥 Ação</option>
+                                    <option value="Aventura">🗺️ Aventura</option>
+                                    <option value="Comédia">😄 Comédia</option>
+                                    <option value="Drama">🎭 Drama</option>
+                                    <option value="Terror">👻 Terror</option>
+                                    <option value="Romance">💕 Romance</option>
+                                    <option value="Ficção Científica">🚀 Ficção Científica</option>
+                                    <option value="Fantasia">🧙‍♂️ Fantasia</option>
+                                    <option value="Suspense">🔍 Suspense</option>
+                                    <option value="Animação">🎨 Animação</option>
+                                    <option value="Documentário">📹 Documentário</option>
+                                    <option value="Musical">🎵 Musical</option>
+                                </select>
+                                <div class="input-feedback" id="genreFeedback"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="movieRating">⭐ Sua Avaliação</label>
+                                <div class="rating-container">
+                                    <div class="stars" id="starsContainer">
+                                        <span class="star" data-rating="1">⭐</span>
+                                        <span class="star" data-rating="2">⭐</span>
+                                        <span class="star" data-rating="3">⭐</span>
+                                        <span class="star" data-rating="4">⭐</span>
+                                        <span class="star" data-rating="5">⭐</span>
+                                    </div>
+                                    <span class="rating-text" id="ratingText">Clique nas estrelas para avaliar</span>
+                                    <input type="hidden" id="movieRating" name="movieRating" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary" id="submitButton">
+                                <span class="btn-icon">➕</span>
+                                <span class="btn-text">Adicionar Filme</span>
+                            </button>
+                            <button type="button" class="btn-secondary" id="clearForm">
+                                <span class="btn-icon">🗑️</span>
+                                <span class="btn-text">Limpar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="filters-section">
+                <div class="filters-card">
+                    <h3>🔍 Filtros e Pesquisa</h3>
+                    <div class="filters-container">
+                        <div class="filter-group">
+                            <input
+                                type="text"
+                                id="searchInput"
+                                placeholder="🔍 Pesquisar filmes..."
+                                class="search-input"
+                            >
+                        </div>
+                        <div class="filter-group">
+                            <select id="genreFilter" class="filter-select">
+                                <option value="">Todos os gêneros</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <select id="sortSelect" class="filter-select">
+                                <option value="newest">Mais recentes</option>
+                                <option value="oldest">Mais antigos</option>
+                                <option value="name">Por nome (A-Z)</option>
+                                <option value="rating">Por avaliação</option>
+                            </select>
+                        </div>
+                        <button id="clearFilters" class="btn-clear-filters">
+                            🔄 Limpar Filtros
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="movies-section">
+                <div class="movies-header">
+                    <div class="section-title">
+                        <div class="film-reel-mini"></div>
+                        <h3>🍿 Arquivo Cinematográfico</h3>
+                        <div class="film-reel-mini"></div>
+                    </div>
+                    <div class="view-toggle">
+                        <button id="gridViewBtn" class="view-btn active" title="Cinema Gallery">
+                            🎭 Galeria
+                        </button>
+                        <button id="listViewBtn" class="view-btn" title="Arquivo Vintage">
+                            �️ Arquivo
+                        </button>
+                    </div>
+                </div>
+                <div class="movies-container" id="moviesContainer">
+                    <div class="empty-state" id="emptyState">
+                        <div class="empty-cinema">
+                            <div class="empty-screen"></div>
+                            <div class="empty-seats">
+                                <div class="seat"></div>
+                                <div class="seat"></div>
+                                <div class="seat"></div>
+                                <div class="seat"></div>
+                                <div class="seat"></div>
+                            </div>
+                        </div>
+                        <div class="empty-icon">🎬</div>
+                        <h4>Seu cinema está vazio</h4>
+                        <p>🎭 Que tal estrear sua primeira obra-prima?</p>
+                        <div class="empty-sparkles">✨✨✨</div>
+                    </div>
+                </div>
+                <div class="pagination-container" id="paginationContainer" style="display: none;">
+                    <button id="prevPage" class="pagination-btn">« Anterior</button>
+                    <div class="pagination-info" id="paginationInfo"></div>
+                    <button id="nextPage" class="pagination-btn">Próxima »</button>
+                </div>
+            </section>
+            <section class="actions-section">
+                <div class="actions-container">
+                    <button id="exportBtn" class="action-btn">
+                        <span class="btn-icon">💾</span>
+                        <span class="btn-text">Exportar Lista</span>
+                    </button>
+                    <button id="importBtn" class="action-btn">
+                        <span class="btn-icon">📥</span>
+                        <span class="btn-text">Importar Lista</span>
+                    </button>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                    <button id="clearAllBtn" class="action-btn danger">
+                        <span class="btn-icon">🗑️</span>
+                        <span class="btn-text">Limpar Tudo</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="modal-overlay" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>✏️ Editar Filme</h3>
+                <button class="modal-close" id="closeModal">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <div class="form-group">
+                        <label for="editMovieName">Nome do Filme</label>
+                        <input type="text" id="editMovieName" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="editMovieYear">Ano</label>
+                            <input type="number" id="editMovieYear" min="1888" max="2030" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editMovieGenre">Gênero</label>
+                            <select id="editMovieGenre" required>
+                                <option value="Ação">🔥 Ação</option>
+                                <option value="Aventura">🗺️ Aventura</option>
+                                <option value="Comédia">😄 Comédia</option>
+                                <option value="Drama">🎭 Drama</option>
+                                <option value="Terror">👻 Terror</option>
+                                <option value="Romance">💕 Romance</option>
+                                <option value="Ficção Científica">🚀 Ficção Científica</option>
+                                <option value="Fantasia">🧙‍♂️ Fantasia</option>
+                                <option value="Suspense">🔍 Suspense</option>
+                                <option value="Animação">🎨 Animação</option>
+                                <option value="Documentário">📹 Documentário</option>
+                                <option value="Musical">🎵 Musical</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Avaliação</label>
+                        <div class="stars" id="editStarsContainer">
+                            <span class="star" data-rating="1">⭐</span>
+                            <span class="star" data-rating="2">⭐</span>
+                            <span class="star" data-rating="3">⭐</span>
+                            <span class="star" data-rating="4">⭐</span>
+                            <span class="star" data-rating="5">⭐</span>
+                        </div>
+                        <input type="hidden" id="editMovieRating">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-secondary" id="cancelEdit">Cancelar</button>
+                <button type="button" class="btn-primary" id="saveEdit">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
